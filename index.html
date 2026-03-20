@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -124,6 +125,10 @@ border-radius:15px;
 padding:25px;
 backdrop-filter:blur(10px);
 transition:.4s;
+
+/* ✅ FIX: ALIGN BUTTONS */
+display:flex;
+flex-direction:column;
 }
 
 .card:hover{
@@ -133,6 +138,26 @@ box-shadow:0 10px 30px rgba(0,0,0,0.5);
 
 .card h3{
 margin-bottom:10px;
+}
+
+/* PROJECT BUTTON */
+
+.project-btn{
+display:inline-block;
+margin-top:auto; /* ✅ pushes button to bottom */
+padding:8px 16px;
+background:#38bdf8;
+color:black;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.project-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #38bdf8;
 }
 
 /* SKILLS */
@@ -173,6 +198,7 @@ transform:translateY(0);
 }
 
 </style>
+
 </head>
 
 <body>
@@ -230,11 +256,21 @@ and building real-world projects using AWS, Java and Web Development.
 <div class="card">
 <h3>AWS Static Gaming Website</h3>
 <p>Hosted a gaming dashboard using AWS S3 static website hosting.</p>
+
+<a href="https://github.com/jaikishan-2007/AWS-s3-static-gaming-website" target="_blank" class="project-btn">
+View on GitHub
+</a>
+
 </div>
 
 <div class="card">
-<h3>AI Language Assistant</h3>
-<p>Serverless language translator built using AWS Lambda.</p>
+<h3>AWS Signup Notification System</h3>
+<p>Serverless AWS app that sends email notifications on user signup.</p>
+
+<a href="https://github.com/jaikishan-2007/AWS-signup-notification-system" target="_blank" class="project-btn">
+View on GitHub
+</a>
+
 </div>
 
 <div class="card">
@@ -254,12 +290,10 @@ and building real-world projects using AWS, Java and Web Development.
 
 <div class="skills">
 
+<div class="skill">C language</div>
 <div class="skill">Java</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
+<div class="skill">Python - DataVisualisation</div>
 <div class="skill">AWS</div>
-<div class="skill">Git</div>
-<div class="skill">DSA</div>
 
 </div>
 
